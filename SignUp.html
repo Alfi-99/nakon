@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Tailwind link -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp,container-queries"></script>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+                lavender: '#FAB387',
+                primary_fg: '#1E1E2E',
+                card_fg: 'CDD6F4',
+                muted: '#313244',
+                muted_fg: '#BAC2DE',
+                bg: '#1E1E2E',
+                fg:'#CDD6F4',
+                secondary: '#313244',
+                secondary_fg:'#CDD6F4',
+                accent: '#313244',
+                accent_fg:'#CDD6F4',
+                desctructive:'#F38Ba8',
+                desctructive_fg:'#181825',
+                ring:'#CDD6F4',
+                muted_lavender: '#766B65',
+                muted_text_lavender: '#37374A',
+                hoverr_lavv: '#FFAA76'
+
+              },
+              fontFamily: {
+                'poppins': ['Poppins']
+              }
+            }
+          }
+        }
+      </script>
+    <style type="text/tailwindcss">
+        @layer utilities {
+        .content-auto {
+            content-visibility: auto;
+        }
+        }
+    </style>
+    <!-- Tailwind End -->
+</head>
+<body>
+    <div class="bg-bg h-screen">
+        <div class="flex flex-row justify-between px-[170px] py-[127px]">
+            <div class="bg-secondary w-1/2 px-[97px] py-[73px]" >
+                <div class="flex">
+                    <p class="text-white">Sudah punya akun?</p>
+                    <p class="px-2 text-lavender"><a href="#">Login</a></p>
+                </div> 
+                <h1 class="py-[50px] font-bold text-5xl text-white">Daftar</h1>
+                <p>Nama depan</p>
+                <input type="text">
+            </div>
+            <div class="md:bg-slate-100 md:w-1/2 " >kiri</div>
+        </div>
+    </div>
+</body>
+</html>
