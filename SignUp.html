@@ -1,67 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <!-- Tailwind link -->
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp,container-queries"></script>
     <script>
-        tailwind.config = {
-          theme: {
-            extend: {
-              colors: {
-                clifford: '#da373d',
-                lavender: '#FAB387',
-                primary_fg: '#1E1E2E',
-                card_fg: 'CDD6F4',
-                muted: '#313244',
-                muted_fg: '#BAC2DE',
-                bg: '#1E1E2E',
-                fg:'#CDD6F4',
-                secondary: '#313244',
-                secondary_fg:'#CDD6F4',
-                accent: '#313244',
-                accent_fg:'#CDD6F4',
-                desctructive:'#F38Ba8',
-                desctructive_fg:'#181825',
-                ring:'#CDD6F4',
-                muted_lavender: '#766B65',
-                muted_text_lavender: '#37374A',
-                hoverr_lavv: '#FFAA76'
-
-              },
-              fontFamily: {
-                'poppins': ['Poppins']
-              }
-            }
-          }
-        }
-      </script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              lavender: "#FAB387",
+              primary_fg: "#1E1E2E",
+              card_fg: "CDD6F4",
+              muted: "#313244",
+              muted_fg: "#BAC2DE",
+              bg: "#1E1E2E",
+              fg: "#CDD6F4",
+              secondary: "#313244",
+              secondary_fg: "#CDD6F4",
+              accent: "#313244",
+              accent_fg: "#CDD6F4",
+              desctructive: "#F38Ba8",
+              desctructive_fg: "#181825",
+              ring: "#CDD6F4",
+              muted_lavender: "#766B65",
+              muted_text_lavender: "#37374A",
+              hoverr_lavv: "#FFAA76",
+            },
+            fontFamily: {
+              poppins: ["Poppins"],
+            },
+          },
+        },
+      };
+    </script>
     <style type="text/tailwindcss">
-        @layer utilities {
+      @layer utilities {
         .content-auto {
-            content-visibility: auto;
+          content-visibility: auto;
         }
-        }
+      }
     </style>
     <!-- Tailwind End -->
-</head>
-<body>
+  </head>
+  <body>
     <div class="bg-bg h-screen">
-        <div class="flex flex-row justify-between px-[170px] py-[127px]">
-            <div class="bg-secondary w-1/2 px-[97px] py-[73px]" >
-                <div class="flex">
-                    <p class="text-white">Sudah punya akun?</p>
-                    <p class="px-2 text-lavender"><a href="#">Login</a></p>
-                </div> 
-                <h1 class="py-[50px] font-bold text-5xl text-white">Daftar</h1>
-                <p>Nama depan</p>
-                <input type="text">
+      <div
+        class="flex flex-row justify-between px-[50px] py-[50px] md:px-[170px] md:py-[127px]"
+      >
+        <!-- left card  -->
+        <div
+          class="bg-secondary px-[50px] py-[50px] w-screen rounded-lg md:rounded-l-lg md:w-1/2 md:px-[97px] md:py-[73px]"
+        >
+          <div class="flex">
+            <p class="text-white">Sudah punya akun?</p>
+            <p class="px-2 text-lavender"><a href="#">Login</a></p>
+          </div>
+          <h1 class="py-[50px] font-bold text-5xl text-white">Daftar</h1>
+
+          <div class="md:flex md:gap-3">
+            <div class="py-2 w-full">
+              <p class="text-white">Nama depan</p>
+              <input type="text" class="rounded-lg w-full bg-secondary_fg" />
             </div>
-            <div class="md:bg-slate-100 md:w-1/2 " >kiri</div>
+            <div class="py-2 w-full">
+              <p class="text-white">Nama belakang</p>
+              <input type="text" class="rounded-lg w-full bg-secondary_fg" />
+            </div>
+          </div>
+          <div class="py-2">
+            <p class="text-white">Username</p>
+            <input type="text" class="rounded-lg w-full bg-secondary_fg" />
+          </div>
+          <div class="py-2">
+            <p class="text-white">Email</p>
+            <input type="text" class="rounded-lg w-full bg-secondary_fg" />
+          </div>
+          <div class="py-2">
+            <p class="text-white">Password</p>
+            <input type="text" class="rounded-lg w-full bg-secondary_fg" />
+          </div>
+          <button class="bg-lavender rounded-lg p-2 w-full my-5">Daftar</button>
         </div>
+        <!-- left card end -->
+
+        <!-- right card  -->
+        <div class="md:bg-slate-100 md:w-2/3 hidden md:block rounded-r-lg">
+          kiri
+        </div>
+        <!-- right card end -->
+      </div>
     </div>
-</body>
+  </body>
 </html>
