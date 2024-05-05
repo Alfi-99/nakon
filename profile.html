@@ -5,10 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <!-- font -->
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet" />
     <!-- Tailwind link -->
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp,container-queries"></script>
@@ -35,6 +32,7 @@
               muted_lavender: "#766B65",
               muted_text_lavender: "#37374A",
               hoverr_lavv: "#FFAA76",
+              mulaii: "#D0D4E0",
             },
             fontFamily: {
               poppins: ["Poppins"],
@@ -52,8 +50,84 @@
     </style>
     <!-- Tailwind End -->
   </head>
-  <body>
-  
-    </div>
+  <body class="bg-bg">
+    <!-- Navvbar start -->
+    <nav class="py-9 px-4">
+      <div class="container mx-auto">
+        <div class="flex justify-between">
+          <h1 class="font-poppins text-white font-bold text-2xl">anjay</h1>
+          <button class="w-10 h-10 bg-blue-500 rounded-full shadow-lg"></button>
+        </div>
+      </div>
+    </nav>
+    <!-- navbar end -->
+
+    <!-- nama gede start -->
+    <section>
+      <div class="container mx-auto mt-6">
+        <div class="grid grid-cols-12">
+          <div class="col-span-1">
+            <button class="w-28 h-28 bg-blue-500 rounded-full shadow-lg"></button>
+          </div>
+          <div class="col-span-8 bg-red-500">adsfasdfa</div>
+          <div class="col-span-3 bg-red-700">adfadfasdf</div>
+        </div>
+      </div>
+    </section>
+    <!-- nama gede end -->
+
+    <!-- form startt -->
+    <section>
+      <div class="container mx-auto mt-6">
+        <div class="grid grid-cols-12">
+          <div class="col-span-7">
+            <form>
+              <div class="mb-4 md:flex gap-5">
+                <div class="mb-4 md:mr-2 md:mb-0">
+                  <label class="block text-[#CDD6F4] font-medium font-poppins">Nama Depan</label>
+                  <input type="email" id="email" name="email" placeholder="Your email" class="font-poppins mt-1 p-[10px] w-[15rem] border bg-mulaii rounded-xl" />
+                </div>
+                <div class="mb-4 md:mr-2 md:mb-0">
+                  <label class="block text-[#CDD6F4] font-medium font-poppins">Nama Belakang</label>
+                  <input type="email" id="email" name="email" placeholder="Your email" class="font-poppins mt-1 p-[10px] w-[15rem] border bg-mulaii rounded-xl" />
+                </div>
+              </div>
+
+              <div class="mb-4 mt-10">
+                <label for="email" class="block text-[#CDD6F4] font-medium font-poppins">Username</label>
+                <input type="email" id="email" name="email" placeholder="Your email" class="font-poppins mt-1 p-[10px] w-[25rem] border bg-mulaii rounded-xl" />
+              </div>
+
+              <div class="mb-4 mt-10 md:flex gap-5">
+                <div class="mb-4 md:mr-2 md:mb-0 gap-36">
+                  <label for="email" class="block text-[#CDD6F4] font-medium font-poppins">Username</label>
+                  <input type="email" id="email" name="email" placeholder="Your email" class="font-poppins mt-1 p-[10px] w-[25rem] border bg-mulaii rounded-xl" />
+                </div>
+                <div class="mt-[29px] md:mr-2 md:mb-0">
+                  <button type="submit" class="px-4 py-[10px] bg-lavender text-popover font-poppins rounded-xl hover:bg-hoverr_lavv">Verifikasi</button>
+                </div>
+              </div>
+
+              <div class="mb-4 mt-10 md:flex gap-5">
+                <div class="mb-4 md:mr-2 md:mb-0">
+                  <label class="block text-[#CDD6F4] font-medium font-poppins">Password</label>
+                  <input type="email" id="email" name="email" placeholder="Your email" class="font-poppins mt-1 p-[10px] w-[18rem] border bg-mulaii rounded-xl" />
+                </div>
+                <div class="mb-4 md:mr-2 md:mb-0">
+                  <label class="block text-[#CDD6F4] font-medium font-poppins">New Password</label>
+                  <input type="email" id="email" name="email" placeholder="Your email" class="font-poppins mt-1 p-[10px] w-[20rem] border bg-mulaii rounded-xl" />
+                </div>
+              </div>
+
+              <div class="flex justify-start">
+                <button type="submit" class="px-4 py-2 bg-lavender text-popover font-poppins rounded-xl hover:bg-hoverr_lavv">Save</button>
+              </div>
+            </form>
+            <div class="col-span-5 text-white"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- isi end -->
   </body>
 </html>
