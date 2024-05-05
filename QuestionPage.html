@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Question Page</title>
+    <!-- Tailwind link -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp,container-queries"></script>
+    <script>
+    tailwind.config = {
+        theme: {
+        extend: {
+            colors: {
+            lavender: "#FAB387",
+            primary_fg: "#1E1E2E",
+            card_fg: "CDD6F4",
+            muted: "#313244",
+            muted_fg: "#BAC2DE",
+            bg: "#1E1E2E",
+            fg: "#CDD6F4",
+            secondary: "#313244",
+            secondary_fg: "#CDD6F4",
+            accent: "#313244",
+            accent_fg: "#CDD6F4",
+            desctructive: "#F38Ba8",
+            desctructive_fg: "#181825",
+            ring: "#CDD6F4",
+            muted_lavender: "#766B65",
+            muted_text_lavender: "#37374A",
+            hoverr_lavv: "#FFAA76",
+            },
+            fontFamily: {
+            poppins: ["Poppins"],
+            },
+        },
+        },
+    };
+    </script>
+    <style type="text/tailwindcss">
+    @layer utilities {
+        .content-auto {
+        content-visibility: auto;
+        }
+    }
+    </style>
+    <!-- Tailwind End -->
+</head>
+<body>
+    <div class="bg-bg h-screen">
+        <div class="flex flex-row justify-between px-[50px] pt-[50px] md:px-[170px] md:pt-[127px]">
+            <button class="bg-lavender hover:bg-hoverr_lavv font-bold rounded-lg p-2 my-5 w-1/6">Login</button>
+            <img src="Assets/rizky.jpeg" class="rounded-full w-10 h-10 mt-6" alt="profile picture" srcset="">
+        </div>
+        <div class="flex flex-row justify-between px-[50px] pb-[50px] md:px-[170px] md:pb-[127px]">
+            <!-- left card  -->
+            <!-- <div class="md:bg-slate-100 md:w-2/3 hidden md:block rounded-r-lg">
+                kanan
+            </div> -->
+            <!-- left card end -->
+            <!-- right card end -->
+            <div class="bg-secondary px-[50px] pb-[50px] w-screen rounded-lg md:rounded-l-lg  md:px-[97px] md:pb-[73px] flex flex-col justify-between">
+                <div class="mt-6 w-fit mx-auto">
+                    <img src="Assets/rizky.jpeg" class="rounded-full w-28 " alt="profile picture" srcset="">
+                </div>
+                <h3 class="py-[25px] font-bold text-4xl text-white text-center">Tanya ke Rizky</h3>
+                <div class="py-2">
+                    <input type="text" class="rounded-lg w-full bg-secondary_fg h-60 " />
+                </div>
+            </div>
+            
+            <!-- right card  -->
+        </div>
+    </div>
+</body>
+
+
+</html>
