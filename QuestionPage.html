@@ -47,6 +47,67 @@
     <!-- Tailwind End -->
 </head>
 <body>
+    <div
+    class="flex justify-between items-center shadow-sm px-6 py-3 md:px-[100px] xl:px-[250px] bg-secondary fixed w-full"
+  >
+    <h1 class="text-2xl font-bold"><a href="/">Nakon</a></h1>
+    <div class="flex items-center gap-4">
+      <button
+        class="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input hover:text-accent-foreground h-10 w-10 bg-secondary hover:bg-background"
+        type="button"
+        id="radix-:R6cvff6cq:"
+        aria-haspopup="menu"
+        aria-expanded="false"
+        data-state="closed"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          class="lucide lucide-sun h-[1.2rem] w-[1.2rem] rotate-0 scale-100 transition-all dark:-rotate-90 dark:scale-0"
+        >
+          <circle cx="12" cy="12" r="4"></circle>
+          <path d="M12 2v2"></path>
+          <path d="M12 20v2"></path>
+          <path d="m4.93 4.93 1.41 1.41"></path>
+          <path d="m17.66 17.66 1.41 1.41"></path>
+          <path d="M2 12h2"></path>
+          <path d="M20 12h2"></path>
+          <path d="m6.34 17.66-1.41 1.41"></path>
+          <path d="m19.07 4.93-1.41 1.41"></path></svg><svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          class="lucide lucide-moon absolute h-[1.2rem] w-[1.2rem] rotate-90 scale-0 transition-all dark:rotate-0 dark:scale-100">
+          <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"></path></svg>
+          <span class="sr-only">Toggle theme</span></button><button
+        type="button"
+        id="radix-:Racvff6cq:"
+        aria-haspopup="menu"
+        aria-expanded="false"
+        data-state="closed"
+      >
+        <span
+          class="relative flex h-10 w-10 shrink-0 overflow-hidden rounded-full"
+          ><img
+            class="aspect-square h-full w-full"
+            src="https://github.com/shadcn.png"
+        /></span>
+      </button>
+    </div>
+  </div>
     <div class="bg-bg h-screen">
         <div class="flex flex-row justify-between px-[50px] pt-[50px] md:px-[170px] md:pt-[127px]">
             <button class="bg-lavender hover:bg-hoverr_lavv font-bold rounded-lg p-2 my-5 w-1/6">Login</button>
@@ -65,7 +126,18 @@
                 </div>
                 <h3 class="py-[25px] font-bold text-4xl text-white text-center">Tanya ke Rizky</h3>
                 <div class="py-2">
-                    <input type="text" class="rounded-lg w-full bg-secondary_fg h-60 " />
+                    <form>
+                      <label for="chat" class="sr-only">Your message</label>
+                      <div class="flex items-center px-3 py-2 rounded-lg bg-secondary_fg  dark:bg-gray-700">
+                          <textarea id="chat" rows="1" class="block mx-4 p-2.5 w-full text-sm text-gray-900 bg-white rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-800 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Your message..."></textarea>
+                              <button type="submit" class="inline-flex justify-center p-2 text-blue-600 rounded-full cursor-pointer hover:bg-blue-100 dark:text-blue-500 dark:hover:bg-gray-600">
+                              <svg class="w-5 h-5 rotate-90 rtl:-rotate-90" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 18 20">
+                                  <path d="m17.914 18.594-8-18a1 1 0 0 0-1.828 0l-8 18a1 1 0 0 0 1.157 1.376L8 18.281V9a1 1 0 0 1 2 0v9.281l6.758 1.689a1 1 0 0 0 1.156-1.376Z"/>
+                              </svg>
+                              <span class="sr-only">Send message</span>
+                          </button>
+                      </div>
+                  </form>
                 </div>
             </div>
             
